@@ -26,7 +26,7 @@ def print_all_averages():
     if averages:
         print("Best subject:", max(averages, key=averages.get))
         print("Worst subject:", min(averages, key=averages.get))
-
+#returns users GPA
 def get_GPA():
     all_grades = []
 
@@ -51,7 +51,7 @@ def get_GPA():
         return 1.0
     else:
         return 0.0
-    
+#menu where functions are tested   
 def main():
 
     run_menu = True
