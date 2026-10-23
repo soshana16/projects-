@@ -1,0 +1,9 @@
+1. The purpose of this program is to keep track of all the grades in three subjects, Science, Math, and English/
+2. My program can be used by a student to access there grades. My code targets them because it evaluates 3 seperate scores and adds them to
+an average. My program can also be used by a teacher who has to keep track of many students grades. Using this code they could change the
+subjects to students' names to keep track of every individual grade. 
+3. One feature of my program that is non-negotiable is the print_average() function which takes the average of the grades listed at the
+top of my program. This is the basis of my program and its function so without it, my code would be useless. One feature that is nice to 
+have is the message after the user exits saying Bye!
+4. The program could print the corresponding letter corresponding to the GPA. This makes it easier to use because letter grades 
+are universal and can be understood by a wider spread of people. Another imporvement would be to output the grades in a better display.
