@@ -1,12 +1,12 @@
 grades = {"Math": [90,75,82], "Science": [89, 97, 96], "English": [95, 93, 87]}
 
-
+#takes subject and grade and adds grade to list
 def add_grade(subject, grade):
     subject=subject.title()
     if subject not in grades:
         grades[subject] = []
     grades[subject].append(grade)
-
+#takes subject and prints average
 def print_average(subject):
     if subject in grades and len(grades[subject]) > 0:
         average = sum(grades[subject])/len(grades[subject])
@@ -14,7 +14,7 @@ def print_average(subject):
     else:
         print("Subject does not exist or has no grades.")
 
-
+#prints subject and corresponding average
 def print_all_averages():
     averages = {}
 
