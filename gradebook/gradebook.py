@@ -14,6 +14,10 @@ def print_average(subject):
     else:
         print("Subject does not exist or has no grades.")
 
+def print_grades(subject):
+    for grade in grades.get(subject):
+        print(grade)
+
 #prints subject and corresponding average
 def print_all_averages():
     averages = {}
@@ -59,10 +63,11 @@ def main():
     while run_menu:
         print("\n Gradebook Menu")
         print("1. print all class averages")
-        print("2. print grades for a class")
+        print("2. print average for one classS")
         print("3. print overall GPA")
         print("4. add a grade")
-        print("5. Exit")
+        print("5. print grades for a class")
+        print("6. Exit")
 
         option = input("Choose an option: ")
 
@@ -79,6 +84,9 @@ def main():
             add_grade(subject, grade)
             print("A grade was added to the gradebook!")
         elif option == "5":
+             subject = input("Enter the subject name: ")
+             print_grades(subject)
+        elif option == "6":
             print("Bye!")
             run_menu = False
         else:
