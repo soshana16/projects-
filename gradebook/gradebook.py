@@ -2,7 +2,7 @@ import csv
 
 grades = {}
 filepath="/Users/soshana/Desktop/Data-sciencefolder/repo-test/test/projects-/gradebook/grades.csv"
-
+#loads grades
 def load_grades():
     global grades
     try:
@@ -21,7 +21,7 @@ def load_grades():
     except ValueError:
         print("Invalid CSV data")
         grades = {"Math": [90,75,82], "Science": [89,97,96], "English": [95,93,87]}
-
+#save gradesS
 def save_grades():
     try:
         with open('grades.csv', "w", newline="") as file:
