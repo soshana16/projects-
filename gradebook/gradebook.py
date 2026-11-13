@@ -108,7 +108,7 @@ def get_GPA():
         return 1.0
     else:
         return 0.0
-    
+ #removes grade   
 def remove_grade(subject, grade):
     subject = subject.strip().title()
 
@@ -119,7 +119,7 @@ def remove_grade(subject, grade):
         print("Grade removed successfully!")
     else:
         print("Grade not found in this subject.")
-
+#create a visual representation of the user’s average grades across all subjects
 def visualize_grades():
     print("\nGrade Visualization")
     print("X = 50%, * = 5%")
@@ -145,8 +145,7 @@ def visualize_grades():
 
             # Align bars
             print(f"{subject:<12}: {bar}")
-        else:
-            print(f"{subject:<12}: No grades")
+
 
 #menu where functions are tested   
 def main():
